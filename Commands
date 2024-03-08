@@ -1,0 +1,28 @@
+01-vpc
+terraform apply -auto-approve
+
+02
+terraform apply -auto-approve
+
+03
+terraform apply -auto-approve
+
+04
+terraform apply -auto-approve
+
+
+
+1. Login to the work station and do aws configure
+
+2.To upgrade the cluster
+aws eks update-kubeconfig --region us-east-1 --name roboshop-tf
+
+
+
+
+
+
+To destroy all the resources from 04-eksctl folder to 01-vpc
+for i in `ls -dr */` ; do cd $i ; terraform destroy -auto-approve ; cd .. ; done
+
+ls -dr */  - this command will list the directories in reverse order.
