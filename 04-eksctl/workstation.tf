@@ -55,3 +55,6 @@ data "aws_ami" "centos8"{
         values = ["hvm"]
     }
 }
+
+
+## After login to the workstation we have to do aws configure of the user who run the eks terraform apply
